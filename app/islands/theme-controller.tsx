@@ -46,7 +46,6 @@ const themes = [
 export default function ThemeController() {
   const [currentTheme, setCurrentTheme] = useState(() => {
     if (typeof localStorage !== "undefined") {
-      console.log(localStorage.getItem("theme"));
       return localStorage.getItem("theme") || "light";
     }
     return "light";

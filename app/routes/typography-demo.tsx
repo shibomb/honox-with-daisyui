@@ -1,10 +1,11 @@
 import { createRoute } from "honox/factory";
-import CodeBlock from "../components/ui/code-block";
+import CodeBlock from "../islands/code-block";
 
 export default createRoute(async (c) => {
   return c.render(
     <>
       <title>Typography Demo</title>
+
       <div class="p-4">
         <div role="alert" class="alert alert-info">
           <span class="">
@@ -176,14 +177,11 @@ export default createRoute(async (c) => {
           Code blocks are ideal for displaying larger pieces of code. They are
           styled beautifully with the Typography plugin.
         </p>
-        // developing...
-        {/* <CodeBlock
-          code={`function greet() {
+        <CodeBlock lang="tsx">
+          {`function greet() {
   console.log('Hello, world!');
 }`}
-          lang="ts"
-          theme="github-dark-dimmed"
-        /> */}
+        </CodeBlock>
         <h2 id="tables-organizing-data">Tables: Organizing Data</h2>
         <p>
           Tables are essential for organizing data in rows and columns. Tailwind
