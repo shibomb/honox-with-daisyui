@@ -2,7 +2,7 @@ import { createRoute } from "honox/factory";
 import Counter from "../islands/counter";
 
 export default createRoute((c) => {
-  const name = c.req.query("name") ?? "Hono";
+  const name = c.req.query("name") ?? "Hono with daisyUI";
   return c.render(
     <>
       <title>{name}</title>
