@@ -1,10 +1,19 @@
 import { createRoute } from "honox/factory";
 import CodeBlock from "../islands/code-block";
+import OgpMeta from "../components/ogp-meta";
 
 export default createRoute(async (c) => {
   return c.render(
     <>
       <title>Typography Demo</title>
+      <meta name="description" content="Typography Demo from daisyUI docs." />
+      <OgpMeta
+        c={c}
+        title="Typography Demo"
+        description="Typography Demo from daisyUI docs."
+        type="website"
+        img="/img/app-ogp-img.png"
+      />
 
       <div class="p-4">
         <div role="alert" class="alert alert-info">
