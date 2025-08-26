@@ -3,7 +3,14 @@
     "allow": [
       "Bash(rm:*)",
       "Bash(npm install)",
-      "Bash(bun run:*)"
+      "Bash(bun run:*)",
+      "Bash(curl:*)",
+      "Bash(npx vite build:*)",
+      "Bash(npx vite:*)",
+      "Bash(bun install:*)",
+      "Bash(bun remove:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }
