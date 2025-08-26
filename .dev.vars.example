@@ -1,0 +1,14 @@
+#.dev.vars.example
+# このファイルを.dev.varsにコピーして、実際の値を設定してください。
+
+# 外部APIの認証キー
+API_KEY=""
+
+# データベース接続情報
+DATABASE_URL="postgresql://user:password@host:port/database"
+
+# JWT署名用のシークレット
+JWT_SECRET=""
+
+# GTMキー
+GTM_ID="GTM-Z99ZZ999"

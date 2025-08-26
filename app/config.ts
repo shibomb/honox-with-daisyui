@@ -7,6 +7,7 @@ export const appConfig = {
     author_url: "https://github.com/shibomb/",
     createdYear: "YYYY",
     defaultLcale: "ja_JP",
+    gtmId: "GTM-Z99ZZ999",
 } as const;
 
 export const getBaseUrl = (c: Context) => {
